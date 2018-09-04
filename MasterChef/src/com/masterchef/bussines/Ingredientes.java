@@ -1,47 +1,69 @@
 package com.masterchef.bussines;
 
+/**
+ * Clase Ingredientes
+ * @author Netasystems/Gonzalo
+ */
 public class Ingredientes 
 {
+	/**
+	 * Nombre ingredientes
+	 */
 	private String nombre;
+	/**
+	 * Cantidad de ingredientes
+	 */
 	private String cantidad;
 	
+	
+	/**
+	 * Constructor con parametros
+	 * @param nombre Parametro nombre del ingrediente
+	 * @param cantidad Parametro cantidad del ingrediente
+	 */
 	public Ingredientes(String nombre, String cantidad) 
 	{
 		super();
 		this.nombre = nombre;
 		this.cantidad = cantidad;
-		/*
-		if (nombre.isEmpty()||cantidad.isEmpty()) 
-		{
-			System.out.println("Nombre o/y cantidad vacios...");
-		}
-		else 
-		{
-			this.nombre = nombre;
-			this.cantidad = cantidad;	
-		}
-		*/
 	}
 	
-	public String getNombre() 
-	{
+	
+	/**
+	 * Obtener el valor asignado 
+	 * @return El valor de la propiedad de nombre
+	 */
+	public String getNombre() {
 		return nombre;
 	}
-	
-	public void setNombre(String nombre) 
-	{
+
+
+	/**
+	 * Asigna el valor
+	 * @param nombre Asigna el valor nombre
+	 */
+	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	
-	public String getcantidad() 
-	{
+
+
+	/**
+	 * Obtener el valor asignado 
+	 * @return El valor de la propiedad de cantidad
+	 */
+	public String getCantidad() {
 		return cantidad;
 	}
-	
-	public void setcantidad(String cantidad) 
-	{
+
+
+	/**
+	 * Asigna el valor
+	 * @param cantidad Asigna el valor cantidad
+	 */
+	public void setCantidad(String cantidad) {
 		this.cantidad = cantidad;
 	}
+
 
 	@Override
 	public int hashCode() {
@@ -73,9 +95,6 @@ public class Ingredientes
 			return false;
 		return true;
 	}	
-	
-	
-	
 	
 	
 }

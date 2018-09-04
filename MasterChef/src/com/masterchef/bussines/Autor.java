@@ -1,10 +1,26 @@
 package com.masterchef.bussines;
 
+/**
+ * Clase Autor
+ * @author NetaSystems/Gonzalo
+ */
 public class Autor 
 {
+	/**
+	 * Numero de Autor
+	 */
 	private int numAutor;
+	/**
+	 * Nombre de Autor
+	 */
 	private String nomAutor;
 	
+	
+	/**
+	 * Constructor con parametros
+	 * @param numAutor Numero de autor
+	 * @param nomAutor Nombre del autor
+	 */
 	public Autor(int numAutor, String nomAutor) 
 	{
 		super();
@@ -12,24 +28,40 @@ public class Autor
 		this.nomAutor = nomAutor;
 	}
 
+
+	/**
+	 * Obtener el valor asignado 
+	 * @return El valor de la propiedad de numAutor
+	 */
 	public int getNumAutor() {
 		return numAutor;
 	}
 
+	/**
+	 * Asigna el valor
+	 * @param numAutor Asigna el valor numAutor
+	 */
 	public void setNumAutor(int numAutor) {
 		this.numAutor = numAutor;
 	}
 
+
+	/**
+	 * Obtener el valor asignado 
+	 * @return El valor de la propiedad de nomAutor
+	 */
 	public String getNomAutor() {
 		return nomAutor;
 	}
 
+	/**
+	 * Asigna el valor
+	 * @param nomAutor Asigna el valor nomAutor
+	 */
 	public void setNomAutor(String nomAutor) {
 		this.nomAutor = nomAutor;
 	}
 
-	
-	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -58,11 +90,6 @@ public class Autor
 		return true;
 	}
 	
-	
-	
-	
-
-		
 	
 
 }

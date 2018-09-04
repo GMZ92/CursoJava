@@ -1,12 +1,6 @@
 package com.masterchef.main;
 
-import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
-import java.util.Scanner;
-import java.util.Set;
-
 import java.util.ArrayList;
 
 import com.masterchef.bussines.Ingredientes;
@@ -16,8 +10,17 @@ import com.masterchef.bussines.Recetario;
 import com.masterchef.bussines.Autor;
 
 
+/**
+ * Clase Main
+ * @author NetaSystems/Gonzalo
+ *
+ */
 public class Main 
 {
+	/**
+	 * Metodo main de la clase
+	 * @param args Argumentos del metodo
+	 */
 	public static void main(String[] args) 
 	{
 		System.out.println("MasterChef \n");

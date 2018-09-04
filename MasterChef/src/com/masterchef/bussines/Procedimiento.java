@@ -1,11 +1,26 @@
 package com.masterchef.bussines;
 
+/**
+ * Clase Procedimiento
+ * @author Netasystems/Gonzalo
+ */
 public class Procedimiento 
 {	
+	/**
+	 * Numero de procedimiento
+	 */
 	private int num; 
+	/**
+	 * Descripcion de procedimiento
+	 */
 	private String paso;
 	
-	
+		
+	/**
+	 * Constructor con parametros
+	 * @param num Parametro numero de procedimiento
+	 * @param paso Parametro descripcion de procedimiento
+	 */
 	public Procedimiento(int num, String paso) 
 	{
 		super();
@@ -13,25 +28,45 @@ public class Procedimiento
 		this.paso = paso;
 	}
 
-	
-	
-	public int getNum() 
-	{
+
+	/**
+	 * Obtener el valor asignado 
+	 * @return El valor de la propiedad de num
+	 */
+	public int getNum() {
 		return num;
 	}
 
-	public void setNum(int num) 
-	{
+
+	/**
+	 * Asigna el valor
+	 * @param num Asigna el valor num
+	 */
+	public void setNum(int num) {
 		this.num = num;
 	}
 
-	public String getPaso() 
-	{
+
+	/**
+	 * Obtener el valor asignado 
+	 * @return El valor de la propiedad de paso
+	 */
+	public String getPaso() {
 		return paso;
 	}
 
-	public void setPaso(String paso) 
-	{
+
+	/**
+	 * Asigna el valor
+	 * @param paso Asigna el valor paso
+	 */
+	public void setPaso(String paso) {
 		this.paso = paso;
 	}
+
+
+
+
+	
+	
 }

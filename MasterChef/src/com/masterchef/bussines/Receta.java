@@ -2,15 +2,38 @@ package com.masterchef.bussines;
 
 import java.util.List;
 
+/**
+ * Clase Receta
+ * @author NetaSystems/Gonzalo
+ */
 public class Receta 
 {
+	/**
+	 * Nombre de la receta
+	 */
 	private String nombre;
+	/**
+	 * Lista de autores
+	 */
 	private List<Autor> autor;
+	/**
+	 * Lista de ingredientes
+	 */
 	private List<Ingredientes> ingredientes;
+	/**
+	 * Lista de procedimientos
+	 */
 	private List<Procedimiento> procedimiento;
 	
 	
 		
+	/**
+	 * Constructor con parametros 
+	 * @param nombre Nombre de la receta
+	 * @param autor Lista de ingredientes
+	 * @param ingredientes Lista de ingredientes
+	 * @param procedimiento Lista de procedimientos
+	 */
 	public Receta(String nombre,List<Autor> autor, List<Ingredientes> ingredientes, List<Procedimiento> procedimiento) 
 	{
 		super();
@@ -21,6 +44,9 @@ public class Receta
 	}
 
 	
+	/**
+	 * Metodo mostrar el autor de la lista
+	 */
 	public void mostrarAutor()
 	{
 		for (Autor a : autor) 
@@ -29,15 +55,21 @@ public class Receta
 		}
 	}
 	
+	/**
+	 * Metodo mostrar Ingredientes de la lista
+	 */
 	public void mostrarIngredientes() 
 	{
 		for(Ingredientes i : ingredientes) 
 		{
-			System.out.println("	" + i.getNombre()+"  "+i.getcantidad());
+			System.out.println("	" + i.getNombre() + "  " + i.getCantidad());
 		}
 	}
 	
 	
+	/**
+	 * Metodo mostrar procedimiento de la lista
+	 */
 	public void mostrarProcedimiento() 
 	{
 		for(Procedimiento p : procedimiento) 
@@ -46,51 +78,79 @@ public class Receta
 		}
 	}
 	
-	
-	public String getNombre() 
-	{
+
+	/**
+	 * Obtener el valor asignado 
+	 * @return El valor de la propiedad de nombre
+	 */
+	public String getNombre() {
 		return nombre;
 	}
 
-	public void setNombre(String nombre) 
-	{
+
+	/**
+	 * Asigna el valor
+	 * @param nombre Asigna el valor nombre
+	 */
+	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 
-	public List<Autor> getAutor() 
-	{
+
+	/**
+	 * Obtener el valor asignado 
+	 * @return El valor de la propiedad de autor
+	 */
+	public List<Autor> getAutor() {
 		return autor;
 	}
-	
-	public void setAutor(List<Autor> autor) 
-	{
+
+
+	/**
+	 * Asigna el valor
+	 * @param autor Asigna el valor autor
+	 */
+	public void setAutor(List<Autor> autor) {
 		this.autor = autor;
 	}
-	
-	
-	public List<Ingredientes> getIngredientes() 
-	{
+
+
+	/**
+	 * Obtener el valor asignado 
+	 * @return El valor de la propiedad de ingredientes
+	 */
+	public List<Ingredientes> getIngredientes() {
 		return ingredientes;
 	}
-	
-	public void setIngredientes(List<Ingredientes> ingredientes) 
-	{
+
+
+	/**
+	 * Asigna el valor
+	 * @param ingredientes Asigna el valor ingredientes
+	 */
+	public void setIngredientes(List<Ingredientes> ingredientes) {
 		this.ingredientes = ingredientes;
 	}
-	
-	
-	public List<Procedimiento> getProcedimiento() 
-	{
+
+
+	/**
+	 * Obtener el valor asignado 
+	 * @return El valor de la propiedad de procedimiento
+	 */
+	public List<Procedimiento> getProcedimiento() {
 		return procedimiento;
 	}
-	
-	public void setProcedimiento(List<Procedimiento> procedimiento) 
-	{
+
+
+	/**
+	 * Asigna el valor
+	 * @param procedimiento Asigna el valor procedimiento
+	 */
+	public void setProcedimiento(List<Procedimiento> procedimiento) {
 		this.procedimiento = procedimiento;
 	}
 
 
-	
 	@Override
 	public int hashCode() 
 	{
