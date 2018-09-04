@@ -1,17 +1,22 @@
 package Business;
 
 /**
- * CLASE CARRERA
- * @author GONZALO
+ * Clase Carrera
+ * @author NetaSystems/Gonzalo
  */
-
 public class Carrera {
 	
+	/**
+	 * Estado de bandera tomada
+	 */
 	private boolean flagTaken = false;
+	/**
+	 * Estado de bandera parada
+	 */
 	private boolean flagstop = false;
 	
 	/**
-	 * Metodo aquireFlag Metodo bandera
+	 * Metodo aquireFlag Metodo estado quien tiene la bandera
 	 * @param threadName Nombre del equipo
 	 * @return Valor de la bandera
 	 */
@@ -27,7 +32,7 @@ public class Carrera {
 	}
 	
 	/**
-	 * Metodo relaseFlag
+	 * Metodo estado de la bandera
 	 */
 	public void releaseFlag() {
 		flagTaken = false;
@@ -35,6 +40,7 @@ public class Carrera {
 	
 	
 	/**
+	 * Metodo dejar bandera
 	 * @return flagstop Retorna bandera alto
 	 */
 	public synchronized boolean leaveFlag() {
@@ -43,6 +49,7 @@ public class Carrera {
 	
 
 	/**
+	 * Metodo estado terminado
 	 * @param flagstop bandera alto
 	 */
 	public void fFlagFinish(boolean flagstop) {

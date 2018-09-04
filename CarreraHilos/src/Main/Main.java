@@ -4,15 +4,14 @@ import Business.Carrera;
 import Business.Equipo;
 
 /**
- * CLASE MAIN
- * @author GONZALO
+ * Clase Main
+ * @author NetaSystems/Gonzalo
  */
-
 public class Main {
 
 	/**
-	 * CLASE Principal
-	 * @param args menu
+	 * Metodo principal main
+	 * @param args argumentos del main
 	 */
 	public static void main(String[] args) {
 		

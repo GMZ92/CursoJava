@@ -1,22 +1,33 @@
 package Business;
 
 /**
- * CLASE CORREDOR
- * @author GONZALO
+ * Clase Corredor
+ * @author NetaSystems/Gonzalo
  */
-
 public class Corredor implements Runnable{
 
+	/**
+	 * Nombre de la carrera
+	 */
 	private Carrera carrera;
+	/**
+	 * Estado del corredor verdadero
+	 */
 	private boolean corre = true;
+	/**
+	 * Nombre del corredor
+	 */
 	private String name;
+	/**
+	 * Nombre de equipo
+	 */
 	private Equipo equipo;
 	
 	/**
-	 * Constructor
-	 * @param carrera parámetro de la carrera
-	 * @param name  parámetro del nombre
-	 * @param equipo  parámetro del equipo
+	 * Constructor corredor
+	 * @param carrera Parámetro de la carrera
+	 * @param name  Parámetro del nombre corredor
+	 * @param equipo  Parámetro del nombre equipo
 	 */
 	public Corredor(Carrera carrera, String name, Equipo equipo) {
 		this.carrera = carrera;

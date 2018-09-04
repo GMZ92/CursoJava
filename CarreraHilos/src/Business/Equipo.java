@@ -7,21 +7,32 @@ import Business.Corredor;
 import Business.Carrera;
 
 /**
- * CLASE EQUIPO
- * @author GONZALO
+ * Clase Equipo
+ * @author NetaSystems/Gonzalo 
  */
-
 public class Equipo implements Runnable{
 
+	/**
+	 * Lista de Corredores
+	 */
 	private List<Corredor> corredores;
+	/**
+	 * Nombre del Equipo
+	 */
 	private String name;
+	/**
+	 * Nombre de la carrera
+	 */
 	private Carrera carrera;
+	/**
+	 * Corredores pendientes
+	 */
 	private int pendientes = 3;
 	
 	/**
 	 * Constructor Equipo
-	 * @param carrera parametro carrera
-	 * @param name parametro nombre
+	 * @param carrera Parametro de Carrera
+	 * @param name Parametro nombre del equipo 
 	 */
 	public Equipo(Carrera carrera, String name){
 		this.name = name;
@@ -35,7 +46,7 @@ public class Equipo implements Runnable{
 	
 
 	/**
-	 * Metodo corredorTerminado
+	 * Metodo corredor termina
 	 */
 	public void corredorTermina() {
 		this.pendientes--;
